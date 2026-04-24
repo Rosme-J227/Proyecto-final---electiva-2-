@@ -3,15 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>DevOps App</title>
+  <title>proyecto final</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   <style>
     :root{
-      --purple-1: #3b0764;
-      --purple-2: #7a3fa6;
-      --accent: #caa0ff;
-      --glass: rgba(255,255,255,0.06);
+      --bg-1: #04302e;
+      --bg-2: #0a6b5a;
+      --accent: #ffb86b;
+      --glass: rgba(255,255,255,0.04);
+      --muted: rgba(255,255,255,0.85);
     }
 
     *{box-sizing:border-box}
@@ -19,9 +20,9 @@
     body {
       margin: 0;
       font-family: 'Poppins', Arial, sans-serif;
-      background: radial-gradient(1200px 600px at 10% 10%, rgba(138,43,226,0.12), transparent),
-                  linear-gradient(135deg, var(--purple-1), var(--purple-2));
-      color: #f7f5ff;
+      background: radial-gradient(900px 500px at 15% 12%, rgba(10,120,100,0.12), transparent),
+          linear-gradient(135deg, var(--bg-1), var(--bg-2));
+      color: #f6f6f4;
       -webkit-font-smoothing:antialiased;
       -moz-osx-font-smoothing:grayscale;
       display:flex;
@@ -49,9 +50,9 @@
 
     .logo{
       width:72px;height:72px;border-radius:12px;
-      background:linear-gradient(135deg,var(--accent), rgba(255,255,255,0.08));
-      display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--purple-1);
-      font-size:28px;box-shadow:0 6px 18px rgba(0,0,0,0.25);
+      background:linear-gradient(135deg, rgba(255,184,107,0.14), rgba(255,184,107,0.06));
+      display:flex;align-items:center;justify-content:center;font-weight:700;color:#042826;
+      font-size:28px;box-shadow:0 6px 18px rgba(3,20,18,0.45);
     }
 
     h1{margin:0;font-size:1.9rem}
@@ -82,7 +83,7 @@
     .btn {
       display:inline-flex;align-items:center;gap:10px;
       background:transparent;color:var(--accent);
-      border:1px solid rgba(202,160,255,0.25);
+      border:1px solid rgba(255,184,107,0.18);
       padding:10px 14px;border-radius:12px;font-weight:600;cursor:pointer;text-decoration:none;
       transition:all .22s ease;
     }
@@ -92,7 +93,7 @@
     .btn:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(11,6,25,0.45);opacity:0.98}
 
     .github{
-      background:linear-gradient(90deg,#141414,#2e2e2e);color:#fff;border:0;padding:10px 16px;border-radius:12px;
+      background:linear-gradient(90deg,#073b33,#0f5f52);color:#fff;border:0;padding:10px 16px;border-radius:12px;
       display:inline-flex;align-items:center;gap:10px;text-decoration:none
     }
 
@@ -113,20 +114,25 @@
     .tech{opacity:0; transform:translateY(8px); animation:fadeUp .6s ease both; animation-delay:var(--delay,0s)}
     .logo{transform:translateY(-2px);}
     /* Firma */
+    .infos{margin-top:18px;padding:12px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.02));border:1px solid rgba(255,255,255,0.03)}
+    .infos dl{display:grid;grid-template-columns:120px 1fr;gap:6px 12px;margin:0}
+    .infos dt{font-weight:700;color:var(--accent)}
+    .infos dd{margin:0;color:var(--muted)}
+
     .signature{margin-top:18px;text-align:right;color:var(--accent);font-family:'Pacifico', cursive;font-size:1.05rem;opacity:0.98}
-    .signature small{display:block;font-family: 'Poppins', sans-serif;font-size:0.8rem;color:rgba(255,255,255,0.65);margin-top:4px}
+    .signature small{display:block;font-family: 'Poppins', sans-serif;font-size:0.8rem;color:rgba(246,246,244,0.7);margin-top:4px}
   </style>
 </head>
 <body>
   <div class="card">
     <header>
-      <div class="logo">DV</div>
+      <div class="logo">PF</div>
       <div style="flex:1; text-align:left">
-        <h1> DevOps App — Entrega Continua</h1>
-        <p class="lead">Demo de integración y despliegue con las tecnologías listadas abajo.</p>
+        <h1>Proyecto Final — Entrega Continua</h1>
+        <p class="lead">Resumen del proyecto y tecnologías usadas. Información general en la sección "Infos".</p>
       </div>
       <div style="display:flex;flex-direction:column;align-items:flex-end;gap:8px">
-        <a class="github" href="https://github.com/Rosme-J227/Practica-Entrega-Continua-electiva-2-.git" target="_blank" rel="noopener noreferrer">
+        <a class="github" href="https://github.com/Rosme-J227/Proyecto-final---electiva-2-.git" target="_blank" rel="noopener noreferrer">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.01-2-3.2.7-3.88-1.38-3.88-1.38-.53-1.36-1.3-1.72-1.3-1.72-1.06-.73.08-.72.08-.72 1.18.09 1.8 1.22 1.8 1.22 1.04 1.78 2.72 1.27 3.38.97.11-.76.41-1.27.74-1.56-2.56-.29-5.26-1.29-5.26-5.74 0-1.27.45-2.31 1.2-3.12-.12-.29-.52-1.48.11-3.09 0 0 .97-.31 3.18 1.19.92-.26 1.9-.39 2.88-.39.98 0 1.96.13 2.88.39 2.21-1.5 3.18-1.19 3.18-1.19.63 1.61.23 2.8.11 3.09.75.81 1.2 1.85 1.2 3.12 0 4.46-2.71 5.44-5.29 5.72.42.36.79 1.08.79 2.17 0 1.57-.01 2.84-.01 3.23 0 .31.21.68.8.56C20.71 21.39 24 17.08 24 12c0-6.35-5.15-11.5-12-11.5z"></path></svg>
           Ver en GitHub
         </a>
@@ -158,7 +164,7 @@
         </span>GitHub</div>
         <div class="desc">Repositorio central y control de versiones.</div>
         <div class="actions">
-          <a class="btn github" href="https://github.com/Rosme-J227/Practica-Entrega-Continua-electiva-2-.git" target="_blank" rel="noopener noreferrer">Ir a GitHub</a>
+          <a class="btn github" href="https://github.com/Rosme-J227/Proyecto-final---electiva-2-.git" target="_blank" rel="noopener noreferrer">Ir a GitHub</a>
         </div>
       </div>
 
@@ -187,6 +193,15 @@
           <span class="btn"><span class="dot"></span> Deploy automático</span>
         </div>
       </div>
+    </section>
+    <section class="infos" aria-label="Información del proyecto">
+      <dl>
+        <dt>Autor</dt><dd>Rosmeris JC</dd>
+        <dt>Proyecto</dt><dd>Entrega continua — Proyecto final</dd>
+        <dt>Versión</dt><dd>1.0.0</dd>
+        <dt>Pruebas unitarias</dt><dd>Incluye `app.test.js`. Ejecuta `npm test` para correr las pruebas — última ejecución exit code 0.</dd>
+        <dt>Descripción</dt><dd>Aplicación demostrativa para mostrar integración continua, despliegue y contenerización.</dd>
+      </dl>
     </section>
     <div class="signature">— Rosmeris JC  <small>Entrega continua — proyecto</small></div>
   </div>

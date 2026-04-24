@@ -1,19 +1,31 @@
 # 2024-1779
 
-# Practica Entrega Continua
+# ------------ Proyecto final ----------------
 
-### imagen: https://hub.docker.com/r/rosjt/hola-devops
+#### Este es el proyecto final de electiva 2:
 
-![alt text](image.png)
+Practica Final Devops CI/CD con Github..
+
+En esta practica vamos a realizar un poco de todo lo aprendido en el curso. Debe de realizar lo siguiente:
+
+1- Crear repositrio git con una aplicacion web hola mundo en cualquier lenguaje de programacion.
+
+2- Crear prueba unitaria para la aplicacion
+
+3- Crear archivo Dockerfile para ejecutar la aplicacion en Docker
+
+3.- Crear github actions que haga lo siguiente al hacer push a github:
+
+- Instale dependencias
+- Ejecute la prueba unitaria
+- Suba la imagen de docker a Docker Hub
+- Publique la aplicacion en produccion (render o cualquier otro servicio)
+
+## Render> --> https://proyecto-final-electiva-2.onrender.com
+
 ![alt text](image-1.png)
 
-# Parte 2 continuacion
+## imagen: --> https://hub.docker.com/r/rosjt/hola-devops-final
 
-## Render> --> https://practica-entrega-continua-electiva-2-9u51.onrender.com
-
-## imagen: --> https://hub.docker.com/r/rosjt/hola-mundo-devops
-
-![alt text](image-2.png)
-![alt text](image-3.png)
-![alt text](image-4.png)
-![alt text](image-5.png)
+![alt text](image-6.png)
+![alt text](image.png)

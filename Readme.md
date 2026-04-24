@@ -29,3 +29,7 @@ En esta practica vamos a realizar un poco de todo lo aprendido en el curso. Debe
 
 ![alt text](image-6.png)
 ![alt text](image.png)
+
+## action --> https://github.com/Rosme-J227/Proyecto-final---electiva-2-/actions/runs/24913490063/job/72960385344
+
+![alt text](image-2.png)
